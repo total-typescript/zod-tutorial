@@ -1,6 +1,6 @@
-# Matt's Zod Crash Course
+# Zod Crash Course
 
-Welcome! This Zod crash course will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
+This Zod crash course will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
 
 ## Quickstart
 
@@ -18,9 +18,14 @@ First, start up the [video on YouTube](TODO).
 
 You'll notice that the course is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
 
-For each exercise, go into `*.problem.ts` and run `yarn exercise 01`, where `01` is the number of the exercise you're on. The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
+To take an exercise:
 
-This course encourages active, exploratory learning. In the video, I'll explain a problem, and you'll be asked to try to find a solution. To attempt a solution, you'll need to:
+1. Go into `*.problem.ts`
+2. Run `yarn exercise 01`, where `01` is the number of the exercise you're on.
+
+The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
+
+This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
 
 1. Check out [Zod's docs](https://github.com/colinhacks/zod)
 2. Try to find something that looks relevant.
