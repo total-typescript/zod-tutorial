@@ -15,7 +15,8 @@
     "exercise": "node scripts/exercise.js",
     "e": "yarn exercise",
     "solution": "SOLUTION=true node scripts/exercise.js",
-    "s": "yarn solution"
+    "s": "yarn solution",
+    "stackblitz:prep": "node scripts/prepare-stackblitz.js"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
