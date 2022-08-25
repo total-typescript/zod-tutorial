@@ -1,11 +1,6 @@
 import { z } from "zod";
 import { Equal, Expect } from "./helpers/type-utils";
 
-/**
- * Refactor this code below to reduce the duplication,
- * while also making sure the cases don't go red!
- */
-
 const ObjectWithId = z.object({
   id: z.string().uuid(),
 });
