@@ -7,6 +7,7 @@ const Form = z.object({
   password: z.string(),
   confirmPassword: z.string(),
 });
+//^ 🕵️‍♂️
 
 export const validateFormInput = (values: unknown) => {
   const parsedData = Form.parse(values);

@@ -4,10 +4,17 @@ import { expect, it } from "vitest";
 import { z } from "zod";
 
 // HINT - use me!
-import { doesStarWarsPersonExist } from "./09-union.solution";
+const doesStarWarsPersonExist = async (id: string) => {
+  const data = await fetch("https://swapi.dev/api/people/" + id).then((res) =>
+    res.json(),
+  );
+
+  return Boolean(data?.name);
+};
 
 const Form = z.object({
   id: z.string(),
+  //           ^ 🕵️‍♂️
 });
 
 export const validateFormInput = async (values: unknown) => {

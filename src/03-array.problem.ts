@@ -8,6 +8,7 @@ const StarWarsPerson = z.object({
 });
 
 const StarWarsPeopleResults = z.unknown();
+//                            ^ 🕵️‍♂️
 
 export const fetchStarWarsPeople = async () => {
   const data = await fetch("https://swapi.dev/api/people/").then((res) =>

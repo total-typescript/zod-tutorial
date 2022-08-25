@@ -5,6 +5,7 @@ import { z } from "zod";
 import { Equal, Expect } from "./helpers/type-utils";
 
 const genericFetch = (url: string, schema: z.ZodSchema) => {
+  //                 ^ 🕵️‍♂️
   return fetch(url)
     .then((res) => res.json())
     .then((result) => schema.parse(result));

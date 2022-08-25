@@ -1,6 +1,8 @@
 // CODE
 
 import { expect, it } from "vitest";
+import { z } from "zod";
+//       ^ 🕵️‍♂️
 
 export const toString = (num: unknown) => {
   return String(num);
