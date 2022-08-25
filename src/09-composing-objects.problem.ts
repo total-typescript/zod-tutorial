@@ -2,7 +2,7 @@ import { z } from "zod";
 import { Equal, Expect } from "./helpers/type-utils";
 
 /**
- * Refactor this code below to reduce the duplication,
+ * 🕵️‍♂️ Refactor this code below to reduce the duplication,
  * while also making sure the cases don't go red!
  */
 
