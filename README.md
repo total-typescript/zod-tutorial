@@ -10,6 +10,9 @@ yarn install
 
 # Starts the first exercise
 yarn exercise 01
+
+# Runs linting and tests on the solution
+yarn solution 01
 ```
 
 ## How to take the course
@@ -33,8 +36,24 @@ This course encourages **active, exploratory learning**. In the video, I'll expl
 
 You'll know if you've succeeded because the tests will pass.
 
-**If you succeeed**, or **if you get stuck**, unpause the video and check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
+**If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
+
+You can run `yarn solution 01` to run the tests and typechecking on the solution.
 
 ## Acknowledgements
 
 Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining his [Discord](https://discord.gg/8S5ujhfTB3). Consider signing up to his [Total TypeScript course](https://totaltypescript.com).
+
+## Reference
+
+### `yarn exercise 01`
+
+Alias: `yarn e 01`
+
+Run the corresponding `*.problem.ts` file.
+
+### `yarn solution 01`
+
+Alias: `yarn s 01`
+
+Run the corresponding `*.solution.ts` file. If there are multiple, it runs only the first one.

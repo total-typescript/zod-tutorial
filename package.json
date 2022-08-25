@@ -12,7 +12,10 @@
     "vitest": "^0.21.1"
   },
   "scripts": {
-    "exercise": "node scripts/exercise.js"
+    "exercise": "node scripts/exercise.js",
+    "e": "yarn exercise",
+    "solution": "SOLUTION=true node scripts/exercise.js",
+    "s": "yarn solution"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
