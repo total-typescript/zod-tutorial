@@ -1,6 +1,8 @@
-# Zod Crash Course
+# Zod Tutorial
 
-This Zod crash course will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
+<a href="https://totaltypescript.com/tutorials/zod"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1662635438/zod-tutorial/card_2x_ywsvl1.png" alt="zod tutorial" /></a>
+
+This Zod tutorial will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
 
 ## Quickstart
 
@@ -15,11 +17,11 @@ yarn exercise 01
 yarn solution 01
 ```
 
-## How to take the course
+## How to take the tutorial
 
 First, start up the [video on YouTube](TODO).
 
-You'll notice that the course is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
+You'll notice that the tutorial is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
 
 To take an exercise:
 
@@ -28,7 +30,7 @@ To take an exercise:
 
 The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
 
-This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
+This tutorial encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
 
 1. Look for any 🕵️‍♂️ emojis to give you a hint on what to change
 1. Check out [Zod's docs](https://github.com/colinhacks/zod)
