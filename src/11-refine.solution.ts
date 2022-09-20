@@ -26,7 +26,7 @@ export const validateFormInput = (values: unknown) => {
 
 // TESTS
 
-it("Should error if the passwords are not the same", () => {
+it("Should throw error if the passwords are not the same", () => {
   expect(() =>
     validateFormInput({
       password: "password",

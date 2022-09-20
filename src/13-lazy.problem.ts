@@ -27,7 +27,7 @@ it("Should succeed when it encounters a correct structure", async () => {
   expect(MenuItem.parse(menuItem)).toEqual(menuItem);
 });
 
-it("Should error when it encounters an incorrect structure", async () => {
+it("Should throw error when it encounters an incorrect structure", async () => {
   const menuItem = {
     children: [
       {

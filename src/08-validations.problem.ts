@@ -42,7 +42,7 @@ it("Should fail if you pass a phone number with too many characters", async () =
   ).toThrowError("String must contain at most 20 character(s)");
 });
 
-it("Should throw when you pass an invalid email", async () => {
+it("Should throw error when you pass an invalid email", async () => {
   expect(() =>
     validateFormInput({
       name: "Matt",
@@ -51,7 +51,7 @@ it("Should throw when you pass an invalid email", async () => {
   ).toThrowError("Invalid email");
 });
 
-it("Should throw when you pass an invalid website URL", async () => {
+it("Should throw error when you pass an invalid website URL", async () => {
   expect(() =>
     validateFormInput({
       name: "Matt",

@@ -31,6 +31,6 @@ it("Should validate correct inputs", async () => {
   ).not.toThrow();
 });
 
-it("Should throw when you do not include the name", async () => {
+it("Should throw error when you do not include the name", async () => {
   expect(() => validateFormInput({})).toThrowError("Required");
 });
