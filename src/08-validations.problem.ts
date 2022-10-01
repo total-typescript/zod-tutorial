@@ -22,6 +22,16 @@ export const validateFormInput = (values: unknown) => {
 
 // TESTS
 
+it("Should fail if you pass a name with too few characters", async () => {
+  expect(() =>
+    validateFormInput({
+      name: "",
+      email: "matt@example.com",
+      phoneNumber: "1",
+    }),
+  ).toThrowError("String must contain at least 1 character(s)");
+});
+
 it("Should fail if you pass a phone number with too few characters", async () => {
   expect(() =>
     validateFormInput({
