@@ -19,8 +19,6 @@ yarn solution 01
 
 ## How to take the tutorial
 
-First, start up the [video on YouTube](TODO).
-
 You'll notice that the tutorial is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
 
 To take an exercise:
@@ -33,7 +31,7 @@ The `exercise` script will run TypeScript typechecks and a test suite on the exe
 This tutorial encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
 
 1. Look for any 🕵️‍♂️ emojis to give you a hint on what to change
-1. Check out [Zod's docs](https://github.com/colinhacks/zod)
+1. Check out [Zod's docs](https://zod.dev)
 1. Try to find something that looks relevant.
 1. Give it a go to see if it solves the problem.
 
