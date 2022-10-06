@@ -37,7 +37,7 @@ This tutorial encourages **active, exploratory learning**. In the video, I'll ex
 
 You'll know if you've succeeded because the tests will pass.
 
-**If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
+**If you succeed**, or **if you get stuck**, check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
 
 You can run `yarn solution 01` to run the tests and typechecking on the solution.
 
