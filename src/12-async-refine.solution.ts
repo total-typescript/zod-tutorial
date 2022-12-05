@@ -4,11 +4,15 @@ import { expect, it } from "vitest";
 import { z } from "zod";
 
 const doesStarWarsPersonExist = async (id: string) => {
-  const data = await fetch("https://swapi.dev/api/people/" + id).then((res) =>
-    res.json(),
-  );
-
-  return Boolean(data?.name);
+  try {
+    const data = await fetch(
+      "https://totaltypescript.com/swapi/people/" + id + ".json",
+    ).then((res) => res.json());
+    return Boolean(data?.name);
+  } catch (e) {
+    // Returns false if not found
+    return false;
+  }
 };
 
 const Form = z.object({
