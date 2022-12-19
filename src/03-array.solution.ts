@@ -13,7 +13,7 @@ const StarWarsPeopleResults = z.object({
 
 export const fetchStarWarsPeople = async () => {
   const data = await fetch(
-    "https://totaltypescript.com/swapi/people.json",
+    "https://www.totaltypescript.com/swapi/people.json",
   ).then((res) => res.json());
 
   const parsedData = StarWarsPeopleResults.parse(data);

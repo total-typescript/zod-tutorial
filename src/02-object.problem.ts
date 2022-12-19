@@ -8,7 +8,7 @@ const PersonResult = z.unknown();
 
 export const fetchStarWarsPersonName = async (id: string) => {
   const data = await fetch(
-    "https://totaltypescript.com/swapi/people/" + id + ".json",
+    "https://www.totaltypescript.com/swapi/people/" + id + ".json",
   ).then((res) => res.json());
 
   const parsedData = PersonResult.parse(data);
