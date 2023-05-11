@@ -24,7 +24,7 @@ You'll notice that the tutorial is split into exercises. Each exercise is split 
 To take an exercise:
 
 1. Go into `*.problem.ts`
-2. Run `yarn exercise 01`, where `01` is the number of the exercise you're on.
+2. Run `npm run exercise 01`, where `01` is the number of the exercise you're on.
 
 The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
 
@@ -39,7 +39,7 @@ You'll know if you've succeeded because the tests will pass.
 
 **If you succeed**, or **if you get stuck**, check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
 
-You can run `yarn solution 01` to run the tests and typechecking on the solution.
+You can run `npm run solution 01` to run the tests and typechecking on the solution.
 
 ## Acknowledgements
 
