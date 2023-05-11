@@ -8,13 +8,13 @@ This Zod tutorial will give you everything you ever needed to know about [Zod](h
 
 ```sh
 # Installs all dependencies
-yarn install
+npm install
 
 # Starts the first exercise
-yarn exercise 01
+npm run exercise 01
 
 # Runs linting and tests on the solution
-yarn solution 01
+npm run solution 01
 ```
 
 ## How to take the tutorial
@@ -47,14 +47,14 @@ Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining 
 
 ## Reference
 
-### `yarn exercise 01`
+### `npm run exercise 01`
 
-Alias: `yarn e 01`
+Alias: `npm run e 01`
 
 Run the corresponding `*.problem.ts` file.
 
-### `yarn solution 01`
+### `npm run solution 01`
 
-Alias: `yarn s 01`
+Alias: `npm run s 01`
 
 Run the corresponding `*.solution.ts` file. If there are multiple, it runs only the first one.
