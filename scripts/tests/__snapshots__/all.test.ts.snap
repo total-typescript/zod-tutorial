@@ -1,0 +1,710 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tsc > Should have the correct TypeScript errors 1`] = `
+",src/02-object.problem.ts(16,10): error TS18046: 'parsedData' is of type 'unknown'.
+src/03-array.problem.ts(20,10): error TS18046: 'parsedData' is of type 'unknown'.
+src/04-infer.problem.ts(15,3): error TS18046: 'data' is of type 'unknown'.
+src/04-infer.problem.ts(15,21): error TS7006: Parameter 'person' implicitly has an 'any' type.
+src/13-lazy.problem.ts(6,7): error TS7022: 'MenuItem' implicitly has type 'any' because it does not have a type annotation and is referenced directly or indirectly in its own initializer.
+src/13-lazy.problem.ts(10,21): error TS2448: Block-scoped variable 'MenuItem' used before its declaration.
+src/14-generics.problem.ts(26,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+,"
+`;
+
+exports[`vitest > Should have the correct Vitest errors 1`] = `
+{
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should throw a runtime error when called with not a number",
+          "location": {
+            "column": 33,
+            "line": 14,
+          },
+          "status": "failed",
+          "title": "Should throw a runtime error when called with not a number",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a string when called with a number",
+          "status": "passed",
+          "title": "Should return a string when called with a number",
+        },
+      ],
+      "message": "",
+      "name": "/src/01-number.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should throw a runtime error when called with not a number",
+          "status": "passed",
+          "title": "Should throw a runtime error when called with not a number",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a string when called with a number",
+          "status": "passed",
+          "title": "Should return a string when called with a number",
+        },
+      ],
+      "message": "",
+      "name": "/src/01-number.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the name",
+          "status": "passed",
+          "title": "Should return the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/02-object.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the name",
+          "status": "passed",
+          "title": "Should return the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/02-object.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected { name: 'Luke Skywalker', …(15) } to deeply equal { name: 'Luke Skywalker' }",
+          ],
+          "fullName": " Should return the name",
+          "location": {
+            "column": 44,
+            "line": 26,
+          },
+          "status": "failed",
+          "title": "Should return the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/03-array.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the name",
+          "status": "passed",
+          "title": "Should return the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/03-array.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-infer.problem.ts",
+      "name": "/src/04-infer.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-infer.solution.1.ts",
+      "name": "/src/04-infer.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-infer.solution.2.ts",
+      "name": "/src/04-infer.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to not throw an error but '[\\\\n  {\\\\n    \\"code\\": \\"invalid_type\\",\\\\n…' was thrown",
+          ],
+          "fullName": " Should validate correct inputs",
+          "location": {
+            "column": 9,
+            "line": 25,
+          },
+          "status": "failed",
+          "title": "Should validate correct inputs",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should throw when you do not include the name",
+          "status": "passed",
+          "title": "Should throw when you do not include the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/05-optional.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should validate correct inputs",
+          "status": "passed",
+          "title": "Should validate correct inputs",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should throw when you do not include the name",
+          "status": "passed",
+          "title": "Should throw when you do not include the name",
+        },
+      ],
+      "message": "",
+      "name": "/src/05-optional.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should include keywords if passed",
+          "status": "passed",
+          "title": "Should include keywords if passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected undefined to deeply equal []",
+          ],
+          "fullName": " Should automatically add keywords if none are passed",
+          "location": {
+            "column": 27,
+            "line": 34,
+          },
+          "status": "failed",
+          "title": "Should automatically add keywords if none are passed",
+        },
+      ],
+      "message": "",
+      "name": "/src/06-default.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should include keywords if passed",
+          "status": "passed",
+          "title": "Should include keywords if passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should automatically add keywords if none are passed",
+          "status": "passed",
+          "title": "Should automatically add keywords if none are passed",
+        },
+      ],
+      "message": "",
+      "name": "/src/06-default.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should fail if an invalid privacyLevel passed",
+          "location": {
+            "column": 5,
+            "line": 26,
+          },
+          "status": "failed",
+          "title": "Should fail if an invalid privacyLevel passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should permit valid privacy levels",
+          "status": "passed",
+          "title": "Should permit valid privacy levels",
+        },
+      ],
+      "message": "",
+      "name": "/src/07-union.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail if an invalid privacyLevel passed",
+          "status": "passed",
+          "title": "Should fail if an invalid privacyLevel passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should permit valid privacy levels",
+          "status": "passed",
+          "title": "Should permit valid privacy levels",
+        },
+      ],
+      "message": "",
+      "name": "/src/07-union.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail if an invalid privacyLevel passed",
+          "status": "passed",
+          "title": "Should fail if an invalid privacyLevel passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should permit valid privacy levels",
+          "status": "passed",
+          "title": "Should permit valid privacy levels",
+        },
+      ],
+      "message": "",
+      "name": "/src/07-union.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should fail if you pass a phone number with too few characters",
+          "location": {
+            "column": 5,
+            "line": 32,
+          },
+          "status": "failed",
+          "title": "Should fail if you pass a phone number with too few characters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should fail if you pass a phone number with too many characters",
+          "location": {
+            "column": 5,
+            "line": 42,
+          },
+          "status": "failed",
+          "title": "Should fail if you pass a phone number with too many characters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should throw when you pass an invalid email",
+          "location": {
+            "column": 5,
+            "line": 51,
+          },
+          "status": "failed",
+          "title": "Should throw when you pass an invalid email",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should throw when you pass an invalid website URL",
+          "location": {
+            "column": 5,
+            "line": 61,
+          },
+          "status": "failed",
+          "title": "Should throw when you pass an invalid website URL",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should pass when you pass a valid website URL",
+          "status": "passed",
+          "title": "Should pass when you pass a valid website URL",
+        },
+      ],
+      "message": "",
+      "name": "/src/08-validations.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail if you pass a phone number with too few characters",
+          "status": "passed",
+          "title": "Should fail if you pass a phone number with too few characters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail if you pass a phone number with too many characters",
+          "status": "passed",
+          "title": "Should fail if you pass a phone number with too many characters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should throw when you pass an invalid email",
+          "status": "passed",
+          "title": "Should throw when you pass an invalid email",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should throw when you pass an invalid website URL",
+          "status": "passed",
+          "title": "Should throw when you pass an invalid website URL",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should pass when you pass a valid website URL",
+          "status": "passed",
+          "title": "Should pass when you pass a valid website URL",
+        },
+      ],
+      "message": "",
+      "name": "/src/08-validations.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/09-composing-objects.problem.ts",
+      "name": "/src/09-composing-objects.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/09-composing-objects.solution.1.ts",
+      "name": "/src/09-composing-objects.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/09-composing-objects.solution.2.ts",
+      "name": "/src/09-composing-objects.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/09-composing-objects.solution.3.ts",
+      "name": "/src/09-composing-objects.solution.3.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected { name: 'Luke Skywalker' } to deeply equal { name: 'Luke Skywalker', …(1) }",
+          ],
+          "fullName": " Should resolve the name and nameAsArray",
+          "location": {
+            "column": 44,
+            "line": 28,
+          },
+          "status": "failed",
+          "title": "Should resolve the name and nameAsArray",
+        },
+      ],
+      "message": "",
+      "name": "/src/10-transform.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should resolve the name and nameAsArray",
+          "status": "passed",
+          "title": "Should resolve the name and nameAsArray",
+        },
+      ],
+      "message": "",
+      "name": "/src/10-transform.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "expected [Function] to throw an error",
+          ],
+          "fullName": " Should error if the passwords are not the same",
+          "location": {
+            "column": 5,
+            "line": 26,
+          },
+          "status": "failed",
+          "title": "Should error if the passwords are not the same",
+        },
+      ],
+      "message": "",
+      "name": "/src/11-refine.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should error if the passwords are not the same",
+          "status": "passed",
+          "title": "Should error if the passwords are not the same",
+        },
+      ],
+      "message": "",
+      "name": "/src/11-refine.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [
+            "promise resolved \\"[object Object]\\" instead of rejecting",
+          ],
+          "fullName": " Should fail if the star wars person does not exist",
+          "location": {
+            "column": 3,
+            "line": 33,
+          },
+          "status": "failed",
+          "title": "Should fail if the star wars person does not exist",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should succeed if the star wars person does exist",
+          "status": "passed",
+          "title": "Should succeed if the star wars person does exist",
+        },
+      ],
+      "message": "",
+      "name": "/src/12-async-refine.problem.ts",
+      "status": "failed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail if the star wars person does not exist",
+          "status": "passed",
+          "title": "Should fail if the star wars person does not exist",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should succeed if the star wars person does exist",
+          "status": "passed",
+          "title": "Should succeed if the star wars person does exist",
+        },
+      ],
+      "message": "",
+      "name": "/src/12-async-refine.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "Cannot access 'MenuItem' before initialization",
+      "name": "/src/13-lazy.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should succeed when it encounters a correct structure",
+          "status": "passed",
+          "title": "Should succeed when it encounters a correct structure",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should error when it encounters an incorrect structure",
+          "status": "passed",
+          "title": "Should error when it encounters an incorrect structure",
+        },
+      ],
+      "message": "",
+      "name": "/src/13-lazy.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch from the Star Wars API",
+          "status": "passed",
+          "title": "Should fetch from the Star Wars API",
+        },
+      ],
+      "message": "",
+      "name": "/src/14-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch from the Star Wars API",
+          "status": "passed",
+          "title": "Should fetch from the Star Wars API",
+        },
+      ],
+      "message": "",
+      "name": "/src/14-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/helpers/type-utils.ts",
+      "name": "/src/helpers/type-utils.ts",
+      "status": "passed",
+    },
+  ],
+}
+`;
