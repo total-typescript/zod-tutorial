@@ -10,7 +10,7 @@
     "chokidar": "^3.5.3",
     "cross-fetch": "^3.1.5",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.4"
   },
   "scripts": {
     "exercise": "tt-cli run",
