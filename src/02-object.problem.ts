@@ -3,12 +3,14 @@
 import { expect, it } from "vitest";
 import { z } from "zod";
 
-const PersonResult = z.unknown();
+const PersonResult = z.object({
+  name: z.string(),
+});
 //                   ^ 🕵️‍♂️
 
 export const fetchStarWarsPersonName = async (id: string) => {
   const data = await fetch(
-    "https://www.totaltypescript.com/swapi/people/" + id + ".json",
+    "https://www.totaltypescript.com/swapi/people/" + id + ".json"
   ).then((res) => res.json());
 
   const parsedData = PersonResult.parse(data);

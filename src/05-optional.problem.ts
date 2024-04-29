@@ -5,7 +5,7 @@ import { z } from "zod";
 
 const Form = z.object({
   name: z.string(),
-  phoneNumber: z.string(),
+  phoneNumber: z.string().optional(),
   //                     ^ 🕵️‍♂️
 });
 
@@ -21,14 +21,14 @@ it("Should validate correct inputs", async () => {
   expect(() =>
     validateFormInput({
       name: "Matt",
-    }),
+    })
   ).not.toThrow();
 
   expect(() =>
     validateFormInput({
       name: "Matt",
       phoneNumber: "123",
-    }),
+    })
   ).not.toThrow();
 });
 

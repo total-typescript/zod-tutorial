@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": [
+      "vitest/importMeta"
+    ],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "/Users/ymizuno/dev/zod-tutorial/src/14-generics.problem.ts"
+  ]
+}
