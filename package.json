@@ -20,6 +20,9 @@
     "ci": "(cd scripts/tests && npx vitest run)",
     "prepare": "tt-cli prepare-stackblitz",
     "e-01": "tt-cli run 01",
+    "s-01": "tt-cli run 01 --solution",
+    "e-02": "tt-cli run 02",
+    "s-02": "tt-cli run 02 --solution",
     "e-03": "tt-cli run 03",
     "s-03": "tt-cli run 03 --solution",
     "e-04": "tt-cli run 04",
@@ -43,10 +46,7 @@
     "e-13": "tt-cli run 13",
     "s-13": "tt-cli run 13 --solution",
     "e-14": "tt-cli run 14",
-    "s-14": "tt-cli run 14 --solution",
-    "s-01": "tt-cli run 01 --solution",
-    "e-02": "tt-cli run 02",
-    "s-02": "tt-cli run 02 --solution"
+    "s-14": "tt-cli run 14 --solution"
   },
   "dependencies": {
     "zod": "^3.21.4"
