@@ -1,9 +1,11 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   test: {
-    include: ["src/**/*.ts"],
-    setupFiles: ["scripts/setup.ts"],
+    include: ["src/**/*{problem,solution,explainer}*.{ts,tsx}"],
     passWithNoTests: true,
+    environment: "jsdom",
   },
+  plugins: [tsconfigPaths()],
 });

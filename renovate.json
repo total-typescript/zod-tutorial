@@ -7,8 +7,13 @@
       "excludePackagePatterns": [
         "typescript",
         "vitest",
-        "zod",
-        "@total-typescript/exercise-cli"
+        "jsdom",
+        "prettier",
+        "vite-tsconfig-paths",
+        "react",
+        "@types/react",
+        "@total-typescript/exercise-cli",
+        "zod"
       ],
       "enabled": false
     }
