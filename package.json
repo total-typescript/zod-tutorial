@@ -49,5 +49,6 @@
   },
   "dependencies": {
     "zod": "^3.21.4"
-  }
+  },
+  "type": "module"
 }
