@@ -6,19 +6,22 @@ import { Equal, Expect } from "./helpers/type-utils";
  * while also making sure the cases don't go red!
  */
 
+const Id = z.string().uuid()
+// type Id  = z.infer<typeof id>
+
 const User = z.object({
-  id: z.string().uuid(),
+  id: Id,
   name: z.string(),
 });
 
 const Post = z.object({
-  id: z.string().uuid(),
+  id: Id,
   title: z.string(),
   body: z.string(),
 });
 
 const Comment = z.object({
-  id: z.string().uuid(),
+  id: Id,
   text: z.string(),
 });
 

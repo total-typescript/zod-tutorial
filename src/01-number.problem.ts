@@ -2,10 +2,14 @@
 
 import { expect, it } from "vitest";
 import { z } from "zod";
+
 //       ^ 🕵️‍♂️
 
+const schema = z.number()
+
 export const toString = (num: unknown) => {
-  return String(num);
+  const parsed = schema.parse(num)
+  return String(parsed);
 };
 
 // TESTS

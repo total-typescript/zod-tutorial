@@ -39,15 +39,7 @@
     "e-09": "tt-cli run 09",
     "s-09": "tt-cli run 09 --solution",
     "e-10": "tt-cli run 10",
-    "s-10": "tt-cli run 10 --solution",
-    "e-11": "tt-cli run 11",
-    "s-11": "tt-cli run 11 --solution",
-    "e-12": "tt-cli run 12",
-    "s-12": "tt-cli run 12 --solution",
-    "e-13": "tt-cli run 13",
-    "s-13": "tt-cli run 13 --solution",
-    "e-14": "tt-cli run 14",
-    "s-14": "tt-cli run 14 --solution"
+    "s-10": "tt-cli run 10 --solution"
   },
   "dependencies": {
     "zod": "^3.23.8"
