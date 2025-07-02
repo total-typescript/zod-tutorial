@@ -12,7 +12,7 @@ const StarWarsPeopleResults = z.unknown();
 
 export const fetchStarWarsPeople = async () => {
   const data = await fetch(
-    "https://www.totaltypescript.com/swapi/people.json",
+    "https://swapi.py4e.com/api/people",
   ).then((res) => res.json());
 
   const parsedData = StarWarsPeopleResults.parse(data);
