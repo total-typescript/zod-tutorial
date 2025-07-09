@@ -42,7 +42,7 @@
     "s-10": "tt-cli run 10 --solution"
   },
   "dependencies": {
-    "zod": "^3.23.8"
+    "zod": "^4.0.0"
   },
   "type": "module"
 }
