@@ -10,7 +10,7 @@
     "jsdom": "^25.0.0",
     "typescript": "^5.6.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.5"
+    "vitest": "^4.1.8"
   },
   "scripts": {
     "exercise": "tt-cli run",
